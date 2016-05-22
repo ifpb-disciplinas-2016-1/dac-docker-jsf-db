@@ -11,7 +11,7 @@ docker build -t jsf-db .
 ##passo 4 - Iniciando o container do banco
 docker run -p 5432:5432 -d jsf-db
 
-##passo 4 - Listando os containers em execução
+##passo 5 - Listando os containers em execução
 docker ps
 
 ##passo 6 - Verificando a criação do banco e da tabela
