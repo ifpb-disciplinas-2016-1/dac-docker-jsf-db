@@ -20,11 +20,11 @@ public class Controlador implements Serializable{
     
     private Pessoa pessoa =  new Pessoa();
     
-    private Pessoas servico = new Pessoas();
+    private Pessoas servico = new PessoasEmMemoria();
     
     private List<Pessoa> todos = new ArrayList<>();
     
-    public String redirecinar(){
+    public String redirecionar(){
         
         return "home.xhtml";
     }

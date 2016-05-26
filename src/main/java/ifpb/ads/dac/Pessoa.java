@@ -1,5 +1,7 @@
 package ifpb.ads.dac;
 
+import java.time.LocalDate;
+
 /**
  * @author Ricardo Job
  * @mail ricardo.job@ifpb.edu.br
@@ -8,6 +10,8 @@ package ifpb.ads.dac;
 public class Pessoa {
 
     private String nome;
+    private int idade = -1;
+    private LocalDate nascimento;
 
     public Pessoa() {
     }
@@ -24,5 +28,23 @@ public class Pessoa {
     public void setNome(String nome) {
         this.nome = nome;
     }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public LocalDate getNascimento() {
+        return nascimento;
+    }
+
+    public void setNascimento(LocalDate nascimento) {
+        this.nascimento = nascimento;
+    }
+    
+    
 
 }
